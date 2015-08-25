@@ -5,7 +5,7 @@ function genericOnClick(info, tab) {
   if (s.indexOf("9gag.com")>-1)
   {
     var f = s.substr(s.lastIndexOf('/') + 1)
-    var n = "http://d24w6bsrhbeh9d.cloudfront.net/photo/" + f + "_700b.jpg"
+    var n = "http://img-9gag-ftw.9cache.com/photo/" + f + "_700b.jpg"
     var m = "http://img-9gag-ftw.9cache.com/photo/" + f + "_460sv.mp4"
     chrome.tabs.create({url: n})
     chrome.tabs.create({url: m})
