@@ -4,7 +4,7 @@ function genericOnClick(info, tab) {
   var s = info.linkUrl
   if (s.indexOf("9gag.com")>-1)
   {
-    var f = s.substr(s.lastIndexOf('/') + 1)
+    var f = s.substr(s.lastIndexOf('/')).split(/[/?]/)[1]
     var n = "http://img-9gag-ftw.9cache.com/photo/" + f + "_700b.jpg"
     var m = "http://img-9gag-ftw.9cache.com/photo/" + f + "_460sv.mp4"
     chrome.tabs.create({url: n})
